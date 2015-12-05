@@ -26,4 +26,9 @@ ActiveRecord::Schema.define(version: 20151205110639) do
 
   add_index "kittens", ["kitten_api_id"], name: "index_kittens_on_kitten_api_id", unique: true, using: :btree
 
+  create_table "votes", force: :cascade do |t|
+    t.boolean "has_vote"
+    t.integer "kittens_id"
+  end
+
 end
