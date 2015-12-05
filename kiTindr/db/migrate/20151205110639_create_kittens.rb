@@ -3,7 +3,7 @@ class CreateKittens < ActiveRecord::Migration
     create_table :kittens do |t|
       t.string :name
       t.text :description
-      t.string :photo
+      t.string :kitten_api_id
 
       t.timestamps null: false
     end
