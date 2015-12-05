@@ -11,8 +11,8 @@
 </p>
 
 <p>
-  <strong>Kitten:</strong>
-  <%= @kitten.kitten_api_id %>
+  <strong>Kitten:</strong><br>
+  <%= image_tag "http://thecatapi.com/api/images/get?format=src&type=gif&id=#{@kitten.kitten_api_id}" %>
 </p>
 
 <%= link_to 'Edit', edit_kitten_path(@kitten) %> |
