@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20151205110639) do
 
   create_table "votes", force: :cascade do |t|
     t.boolean "has_vote"
-    t.integer "kittens_id"
+    t.integer "kitten_id"
   end
 
 end

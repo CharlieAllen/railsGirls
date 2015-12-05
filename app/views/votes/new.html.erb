@@ -1,1 +1,13 @@
-HELLO FLIPPIN' WORLD!
+<%= image_tag "http://thecatapi.com/api/images/get?format=src&type=gif&id=#{@kitten.kitten_api_id}", class: "kitten-for-voting" %>
+
+<%= form_for @vote do |f| %>
+<%= f.hidden_field :kitten_id, value: @kitten.id %>
+<%= f.hidden_field :has_vote, value: true %>
+<%= f.submit "Like this cat" %>
+<% end %>
+
+<%= form_for @vote do |f| %>
+<%= f.hidden_field :kitten_id, value: @kitten.id %>
+<%= f.hidden_field :has_vote, value: false %>
+<%= f.submit "Dislike this cat! NOOOO!" %>
+<% end %>

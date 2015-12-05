@@ -11,7 +11,7 @@ class CreateKittens < ActiveRecord::Migration
     
     create_table :votes do |t|
       t.boolean :has_vote
-      t.references :kittens
+      t.references :kitten
     end
   end
 end
