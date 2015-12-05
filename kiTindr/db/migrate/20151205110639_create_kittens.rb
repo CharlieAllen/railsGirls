@@ -7,5 +7,6 @@ class CreateKittens < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :kittens, :kitten_api_id, unique: true
   end
 end
