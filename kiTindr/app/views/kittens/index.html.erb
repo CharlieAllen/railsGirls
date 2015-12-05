@@ -17,7 +17,7 @@
       <tr>
         <td><%= kitten.name %></td>
         <td><%= kitten.description %></td>
-        <td><%= kitten.photo %></td>
+        <td><%= kitten.kitten_api_id %></td>
         <td><%= link_to 'Show', kitten %></td>
         <td><%= link_to 'Edit', edit_kitten_path(kitten) %></td>
         <td><%= link_to 'Destroy', kitten, method: :delete, data: { confirm: 'Are you sure?' } %></td>
